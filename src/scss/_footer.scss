@@ -1,3 +1,115 @@
 footer{
-	
+	z-index: 999;
+	position: relative;
+}
+.subfooter{
+	height: 33vh;
+	background: $yellow;
+	display: flex;
+	align-items: center;   
+	justify-content: center;
+}
+.subfooter-title{
+	display: flex;
+	justify-content: space-evenly;
+	p{
+		font-family: 'Fjalla One', sans-serif;
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 4.5em;
+		letter-spacing: 0.15em; 
+		margin-bottom: 10px;
+		span{
+			vertical-align: 8px;
+			&:last-of-type{
+			letter-spacing: 0;
+			}
+		}
+	}
+}
+.subfooter-text p{
+	font-weight: bold;
+	font-size: 2em;
+	letter-spacing: 0.025em;
+	text-align: center;    
+	margin-bottom: 25px;
+}
+.footer{
+	height: 35vh;
+	background: #ffffff;
+	display: flex;
+	justify-content: space-between;    
+	align-items: flex-end;
+	padding: 0 3.5vw 90px;
+}
+.footer-end{
+	height: 5vh;
+	background: $primary;
+}
+
+.subfooter-title input{
+	border: 5px solid $black;
+	width: 60%;
+	height: 60px;
+	background: transparent;
+	padding: 0 10px;
+	margin-right: 5%;
+	box-sizing: border-box;
+	font-size: 1.15em;
+	& + input{    
+		width: 35%;
+		margin-right: 0;
+		float: right;
+	}
+}
+.footer-logo{
+	background-image: url(../img/home/nycgha-logo.png);
+	background-color: $black;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 150px;
+	width: 150px;
+	margin-bottom: 20px;
+}
+.footer-address{
+	margin-bottom: 30px;
+	p{
+		font-weight: bold;
+		font-size: 1.15em;
+		margin-bottom: 5px;
+	}
+}
+.footer-tel{
+	p{
+		font-size: 1.05em;
+	}
+}
+.footer-links-container{
+	text-align: right;
+}
+.footer-social-media{
+	display: flex;
+	justify-content: flex-end;
+	div{
+		width: 35px;
+		display: block;
+		margin: 0 0 30px 30px;
+	}
+	svg{
+		width: 100%;
+		fill: $primary;
+	}
+}
+.footer-email{
+	margin-bottom: 30px;
+	a{
+		font-size: 2.75em;
+		color: $primary;
+	}
+}
+.footer-links{
+	a{
+		margin-left: 10px;
+		color: $primary;
+	}
 }

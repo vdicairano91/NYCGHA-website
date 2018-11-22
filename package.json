@@ -4,14 +4,14 @@
   "description": "handlebars",
   "main": "gulpfile.js",
   "scripts": {
-    "shotbot": "node node_modules/ics-shotbot/bin/start-shotbot.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "./bin/scaffold.sh",
+    "dev": "gulp dev"
   },
   "dependencies": {
     "browser-sync": "^2.7.1",
     "event-stream": "^3.3.1",
-    "grunt": "^1.0.1",
     "grunt-assemble": "^0.4.0",
-    "gulp": "^3.8.11",
     "gulp-concat": "^2.5.2",
     "gulp-declare": "^0.3.0",
     "gulp-file-include": "^0.9.0",
@@ -30,18 +30,13 @@
     "wiredep": "^2.2.2",
     "ics-shotbot": "^0.3.0"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./bin/scaffold.sh",
-    "dev": "gulp dev"
-  },
   "licenses": {
     "type": "MIT",
     "url": "https://github.com/assemble/assemble/blob/master/LICENSE-MIT"
   },
   "devDependencies": {
     "browser-sync": "^2.14.0",
-    "grunt": "^1.0.1",
+    "grunt": "^1.0.3",
     "gulp": "^3.9.1",
     "main-bower-files": "^2.13.1"
   }
