@@ -54,6 +54,28 @@ a{
 }
 p{
   color: $black;
+  font-size: 1em;
+  line-height: 1.25em;
+  & + p{
+    margin-top: 15px;
+  }
+  & + h3{
+    margin-top: 5px;
+  }
+}
+ol{
+  list-style-position: inside;
+  margin: 10px 5px;
+  li{
+    font-weight: bold;
+  }
+  p{
+    display: inline;
+    font-weight: normal;
+  }
+}
+.footnote{
+  font-size: 0.85em;
 }
 .page-content {
   overflow: hidden;
@@ -194,6 +216,12 @@ h3{
   justify-content: space-around;
     align-items: center;
     padding: 10vh 10% 15vh;
+  background: $light-grey;
+}
+.code-container{
+  display: block;
+  width: 65%;
+  padding: 7vh 17.5% 15vh;
   background: $light-grey;
 }
 .board-title{
